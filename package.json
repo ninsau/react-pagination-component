@@ -1,0 +1,27 @@
+{
+  "name": "pagination-for-reactjs-component",
+  "version": "1.0.0",
+  "description": "A simple pagination component to use inside your react projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninsau/react-pagination-component.git"
+  },
+  "keywords": [
+    "react",
+    "pagination",
+    "reactjs",
+    "pagination",
+    "pagination",
+    "js"
+  ],
+  "author": "ninsau <cassidyblay@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ninsau/react-pagination-component/issues"
+  },
+  "homepage": "https://github.com/ninsau/react-pagination-component#readme"
+}
