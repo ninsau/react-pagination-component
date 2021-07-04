@@ -1,3 +1,5 @@
+import React from 'react'
+
 module.exports = function pagin (pageCount, pageIndex, setPageIndex) {
   let pagination = [];
 
