@@ -62,6 +62,7 @@ export function pagin (pageCount, pageIndex, setPageIndex) {
     default:
       for (let i = 1; i <= pageCount; i++) {
         pagination.push(
+          <>
             <li
               key={i}
               className={`page-item${pageIndex === i ? " active" : ""}`}
@@ -71,6 +72,7 @@ export function pagin (pageCount, pageIndex, setPageIndex) {
                 <span className="page-link">{i}</span>
               </a>
             </li>
+          </>
         );
       }
       break;
@@ -78,8 +80,9 @@ export function pagin (pageCount, pageIndex, setPageIndex) {
 
   finalIndexes.map((index) => {
     pagination.push(
-      <div>
+      <>
         {index !== "..." && (
+          <>
             <li
               key={index}
               className={`page-item${pageIndex === index ? " active" : ""}`}
@@ -89,11 +92,14 @@ export function pagin (pageCount, pageIndex, setPageIndex) {
                 <span className="page-link">{index}</span>
               </a>
             </li>
+          </>
         )}
         {index === "..." && (
+          <>
             <li className="page-item">...</li>
+          </>
         )}
-      </div>
+      </>
     );
   });
 
