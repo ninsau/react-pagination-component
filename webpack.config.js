@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve("build"),
     filename: "index.js",
-    libraryTarget: "umd2",
+    libraryTarget: "commonjs2",
   },
   module: {
     rules: [
