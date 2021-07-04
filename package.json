@@ -2,7 +2,7 @@
   "name": "pagination-for-reactjs-component",
   "version": "1.0.18",
   "description": "A simple pagination component to use inside your react projects.",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
