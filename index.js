@@ -1,4 +1,4 @@
-const pagin = (pageCount, pageIndex, setPageIndex) => {
+export function pagin (pageCount, pageIndex, setPageIndex) {
   let pagination = [];
 
   let pageCountSet = [];
@@ -106,4 +106,3 @@ const pagin = (pageCount, pageIndex, setPageIndex) => {
   return <ul className="pagination">{pagination}</ul>;
 };
 
-module.exports.pagin = pagin;
