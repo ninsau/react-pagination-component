@@ -1,4 +1,4 @@
-var path = require("path");
+const path = require("path");
 
 module.exports = {
   mode: "production",
@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve("build"),
     filename: "index.js",
-    libraryTarget: "commonjs2",
+    libraryTarget: "umd2",
   },
   module: {
     rules: [

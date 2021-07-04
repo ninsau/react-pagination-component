@@ -1,4 +1,4 @@
-export function pagin (pageCount, pageIndex, setPageIndex) {
+module.exports = function pagin (pageCount, pageIndex, setPageIndex) {
   let pagination = [];
 
   let pageCountSet = [];
