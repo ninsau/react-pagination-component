@@ -2,9 +2,9 @@ const path = require("path");
 
 module.exports = {
   mode: "production",
-  entry: "./index.js",
+  entry: "./paginate.js",
   output: {
-    path: path.resolve("build"),
+    path: path.resolve("./"),
     filename: "index.js",
     libraryTarget: "commonjs2",
   },
