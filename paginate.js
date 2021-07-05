@@ -1,6 +1,6 @@
 import React from 'react'
 
-module.exports = function pagin (pageCount, pageIndex, setPageIndex) {
+export function pagin (pageCount, pageIndex, setPageIndex) {
   let pagination = [];
 
   let pageCountSet = [];
