@@ -14,7 +14,7 @@ View demo on [codesandbox](https://codesandbox.io/s/pagination-for-reactjs-pg8kq
 
 ### 2. Import pagination component inside react
 ```
-import pagin  from 'pagination-for-reactjs-component'
+import { pagin } from 'pagination-for-reactjs-component'
 ```
 
 ### 3. Call the pagination function and pass parameters
