@@ -3,7 +3,9 @@ A simple pagination component to use inside your react projects.
 
 ## Demo
 
-View demo on [codesandbox](https://codesandbox.io/s/pagination-for-reactjs-pg8kq?file=/src/App.js).
+[Demo](https://csb-g2bqr.netlify.app/)
+
+View sample code on [codesandbox](https://codesandbox.io/s/pagination-for-reactjs-pg8kq?file=/src/App.js).
 
 ## How to use
 
