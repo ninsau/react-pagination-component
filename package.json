@@ -15,8 +15,8 @@
     "react",
     "pagination",
     "reactjs",
-    "pagination",
-    "pagination",
+    "bootstrap pagination",
+    "material-ui pagination",
     "js"
   ],
   "author": "ninsau <cassidyblay@gmail.com>",
