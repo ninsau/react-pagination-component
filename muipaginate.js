@@ -1,8 +1,21 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { ButtonGroup } from "@material-ui/core";
+import { Button } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: "inline",
+    flexDirection: "column",
+    alignItems: "center",
+    "& > *": {
+      margin: theme.spacing(1)
+    }
+  }
+}));
 
-export function PaginationComponent({pageCount, pageIndex, setPageIndex}) {
+export default function MuiPagination({ pageCount, pageIndex, setPageIndex }) {
+  const classes = useStyles();
   let pagination = [];
 
   let pageCountSet = [];
@@ -16,14 +29,15 @@ export function PaginationComponent({pageCount, pageIndex, setPageIndex}) {
     case true:
       switch (pageIndex) {
         case 0:
-          //if on first page, show from 0-4 and then last page number
+          //if on first page, show from 1-4 and then last page number
           if (pageIndex === 0) {
             finalIndexes = pageCountSet.slice(pageIndex, pageIndex + 3);
             finalIndexes.push(pageCount);
             finalIndexes.splice(finalIndexes.length - 1, 0, "...");
           }
+          break;
         case 1:
-          //if on first page, show from 1-4 and then last page number
+          //if on page 1, show from 1-4 and then last page number
           if (pageIndex === 1) {
             finalIndexes = pageCountSet.slice(pageIndex - 1, pageIndex + 3);
             finalIndexes.push(pageCount);
@@ -74,15 +88,16 @@ export function PaginationComponent({pageCount, pageIndex, setPageIndex}) {
       for (let i = 0; i <= pageCount; i++) {
         pagination.push(
           <>
-            <li
-              key={i}
-              className={`page-item${pageIndex === i ? " active" : ""}`}
-              aria-current="page"
-            >
-              <a onClick={() => setPageIndex(i)}>
-                <span className="page-link">{i}</span>
-              </a>
-            </li>
+            <div key={i} className={classes.root}>
+              <ButtonGroup aria-label="outlined primary button group">
+                <Button
+                  color={`${pageIndex === i ? "secondary" : ""}`}
+                  onClick={() => setPageIndex(i)}
+                >
+                  {i}
+                </Button>
+              </ButtonGroup>
+            </div>
           </>
         );
       }
@@ -94,20 +109,21 @@ export function PaginationComponent({pageCount, pageIndex, setPageIndex}) {
       <>
         {index !== "..." && (
           <>
-            <li
-              key={index}
-              className={`page-item${pageIndex === index ? " active" : ""}`}
-              aria-current="page"
-            >
-              <a onClick={() => setPageIndex(index)}>
-                <span className="page-link">{index}</span>
-              </a>
-            </li>
+            <div key={index} className={classes.root}>
+              <ButtonGroup aria-label="outlined primary button group">
+                <Button
+                  color={`${pageIndex === index ? "secondary" : ""}`}
+                  onClick={() => setPageIndex(index)}
+                >
+                  {index}
+                </Button>
+              </ButtonGroup>
+            </div>
           </>
         )}
         {index === "..." && (
           <>
-            <li className="page-item">...</li>
+            <Button>...</Button>
           </>
         )}
       </>
