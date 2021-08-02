@@ -5,7 +5,7 @@ A simple pagination component to use inside your react projects.
 
 ![pagination component](https://res.cloudinary.com/deyudesls/image/upload/c_scale,q_100,w_527/v1627897538/pagination-component/Screen_Shot_2021-08-02_at_9.45.00_AM_ajqoei.gif)
 
-[Demo](https://csb-g2bqr.netlify.app/)
+[Demo](https://csb-pg8kq-g5szse1c7-ninsau.vercel.app/)
 
 View sample code on [codesandbox](https://codesandbox.io/s/pagination-for-reactjs-pg8kq?file=/src/App.js).
 
