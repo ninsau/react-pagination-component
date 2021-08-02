@@ -3,6 +3,8 @@ A simple pagination component to use inside your react projects.
 
 ## Demo
 
+![pagination component](https://res.cloudinary.com/deyudesls/image/upload/c_scale,q_100,w_527/v1627897538/pagination-component/Screen_Shot_2021-08-02_at_9.45.00_AM_ajqoei.gif)
+
 [Demo](https://csb-g2bqr.netlify.app/)
 
 View sample code on [codesandbox](https://codesandbox.io/s/pagination-for-reactjs-pg8kq?file=/src/App.js).
@@ -15,30 +17,73 @@ View sample code on [codesandbox](https://codesandbox.io/s/pagination-for-reactj
 ```
 
 ### 2. Import pagination component inside react
+
+ - With bootstrap design
 ```
-import { pagin } from 'pagination-for-reactjs-component'
+import { PaginationComponent } from 'pagination-for-reactjs-component'
+```
+ - With material ui
+```
+import MuiPagination from 'pagination-for-reactjs-component/mui'
 ```
 
 ### 3. Call the pagination function and pass parameters
  
  Inside your render or return
-
+ 
+ - for bootstrap
+```
+        <PaginationComponent
+          pageCount={pageCount}
+          pageIndex={pageIndex}
+          setPageIndex={setPageIndex}
+        />
 ```
 
-pagin(pageCount, pageIndex, setPageIndex)
+ - for material ui
+```
+        <MuiPagination
+          pageCount={pageCount}
+          pageIndex={pageIndex}
+          setPageIndex={setPageIndex}
+        />
 ```
 
 ### 4. Definitions
+- pageCount
 ```
-1. pageCount -> (variable, type:integer), pass the value of the total number of pages or numbers for your pagination.
-
-2. pageIndex -> (variable, type:integer), pass the value of the current page number within your series.
-
-3. setPageIndex -> (function, react hook), this hook receives intergers to pass to pageIndex for navigation.
-
+(variable, type:integer), pass the value of the total number of pages or numbers for your pagination
 ```
 
-Pagination styling with bootstrap
+- pageIndex
+```
+(variable, type:integer), pass the value of the current page number within your series.
+```
 
+- setPageIndex
+```
+(function, react hook), this hook receives intergers to pass to pageIndex for navigation
+```
+
+### 5. Custom styling
+- Top style, access the `pagination` css class and implement your design
+- Default styling
+```
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+```
 
 
