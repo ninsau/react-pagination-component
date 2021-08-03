@@ -21,14 +21,10 @@ View sample code on [codesandbox](https://codesandbox.io/s/pagination-for-reactj
  - With bootstrap design
 ```
 import { PaginationComponent } from 'pagination-for-reactjs-component'
-import "bootstrap/dist/css/bootstrap.min.css";
 ```
  - With material ui
 ```
 import MuiPagination from 'pagination-for-reactjs-component/mui'
-import { ButtonGroup } from "@material-ui/core";
-import { Button } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
 ```
 
 ### 3. Call the pagination function and pass parameters
