@@ -1,6 +1,6 @@
 {
   "name": "pagination-for-reactjs-component",
-  "version": "2.0.17",
+  "version": "2.0.18",
   "description": "A simple pagination component to use inside your react projects.",
   "main": "build/index.js",
   "scripts": {
