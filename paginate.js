@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function PaginationComponent({
   pageCount,
   pageIndex,
-  setPageIndex
+  setPageIndex,
 }) {
   let pagination = [];
 
@@ -19,7 +19,7 @@ export default function PaginationComponent({
     case true:
       switch (pageIndex) {
         case 0:
-          //if on first page, show from 0-4 and then last page number
+          //if on first page, show from 1-4 and then last page number
           if (pageIndex === 0) {
             finalIndexes = pageCountSet.slice(pageIndex, pageIndex + 3);
             finalIndexes.push(pageCount);
@@ -27,7 +27,7 @@ export default function PaginationComponent({
           }
           break;
         case 1:
-          //if on first page, show from 1-4 and then last page number
+          //if on page 1, show from 1-4 and then last page number
           if (pageIndex === 1) {
             finalIndexes = pageCountSet.slice(pageIndex - 1, pageIndex + 3);
             finalIndexes.push(pageCount);
