@@ -1,11 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function PaginationComponent({
-  pageCount,
-  pageIndex,
-  setPageIndex,
-}) {
+export default function Pagination({ pageCount, pageIndex, setPageIndex }) {
   let pagination = [];
 
   let pageCountSet = [];

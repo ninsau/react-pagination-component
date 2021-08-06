@@ -1,4 +1,5 @@
 # react-pagination-component
+
 A simple pagination component to use inside your react projects.
 
 ## Demo
@@ -12,26 +13,31 @@ View sample code on [codesandbox](https://codesandbox.io/s/pagination-for-reactj
 ## How to use
 
 ### Install
+
 ```
 1. npm i pagination-for-reactjs-component --save
 ```
 
 ### 2. Import pagination component inside react
 
- - With bootstrap design
+- With bootstrap design
+
 ```
-import PaginationComponent from 'pagination-for-reactjs-component'
+import Pagination from 'pagination-for-reactjs-component'
 ```
- - With material ui
+
+- With material ui
+
 ```
 import MuiPagination from 'pagination-for-reactjs-component/mui'
 ```
 
 ### 3. Call the pagination function and pass parameters
- 
- Inside your render or return
- 
- - for bootstrap
+
+Inside your render or return
+
+- for bootstrap
+
 ```
         <PaginationComponent
           pageCount={pageCount}
@@ -40,7 +46,8 @@ import MuiPagination from 'pagination-for-reactjs-component/mui'
         />
 ```
 
- - for material ui
+- for material ui
+
 ```
         <MuiPagination
           pageCount={pageCount}
@@ -50,24 +57,30 @@ import MuiPagination from 'pagination-for-reactjs-component/mui'
 ```
 
 ### 4. Definitions
+
 - pageCount
+
 ```
 (variable, type:integer), pass the value of the total number of pages or numbers for your pagination
 ```
 
 - pageIndex
+
 ```
 (variable, type:integer), pass the value of the current page number within your series.
 ```
 
 - setPageIndex
+
 ```
 (function, react hook), this hook receives intergers to pass to pageIndex for navigation
 ```
 
 ### 5. Custom styling
+
 - Top style, access the `pagination` css class and implement your design
 - Default styling
+
 ```
 .pagination {
     display: flex;
@@ -103,7 +116,7 @@ export default function App() {
         <h1>You are on page {pageIndex}</h1>
 
         <span>bootstrap design</span>
-        <PaginationComponent
+        <Pagination
           pageCount={pageCount}
           pageIndex={pageIndex}
           setPageIndex={setPageIndex}
@@ -121,4 +134,3 @@ export default function App() {
 }
 
 ```
-
