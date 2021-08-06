@@ -24,6 +24,7 @@ View sample code on [codesandbox](https://codesandbox.io/s/pagination-for-reactj
 
 ```
 import Pagination from 'pagination-for-reactjs-component'
+import "bootstrap/dist/css/bootstrap.min.css";
 ```
 
 - With material ui
