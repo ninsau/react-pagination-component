@@ -104,8 +104,9 @@ ul {
 
 ```
 import { React, useState } from "react";
-import PaginationComponent from "pagination-for-reactjs-component";
+import Pagination from "pagination-for-reactjs-component";
 import MuiPagination from "pagination-for-reactjs-component/mui";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
   const [pageIndex, setPageIndex] = useState(1);
