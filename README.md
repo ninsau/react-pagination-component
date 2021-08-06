@@ -20,7 +20,7 @@ View sample code on [codesandbox](https://codesandbox.io/s/pagination-for-reactj
 
  - With bootstrap design
 ```
-import { PaginationComponent } from 'pagination-for-reactjs-component'
+import PaginationComponent from 'pagination-for-reactjs-component'
 ```
  - With material ui
 ```
@@ -86,4 +86,39 @@ ul {
 }
 ```
 
+### 6. Sample Code
+
+```
+import { React, useState } from "react";
+import PaginationComponent from "pagination-for-reactjs-component";
+import MuiPagination from "pagination-for-reactjs-component/mui";
+
+export default function App() {
+  const [pageIndex, setPageIndex] = useState(1);
+  let pageCount = 200;
+
+  return (
+    <>
+      <div className="container-fluid mx-3">
+        <h1>You are on page {pageIndex}</h1>
+
+        <span>bootstrap design</span>
+        <PaginationComponent
+          pageCount={pageCount}
+          pageIndex={pageIndex}
+          setPageIndex={setPageIndex}
+        />
+
+        <span>material ui design</span>
+        <MuiPagination
+          pageCount={pageCount}
+          pageIndex={pageIndex}
+          setPageIndex={setPageIndex}
+        />
+      </div>
+    </>
+  );
+}
+
+```
 

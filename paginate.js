@@ -1,8 +1,10 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
-export function PaginationComponent({pageCount, pageIndex, setPageIndex}) {
+export default function PaginationComponent({
+  pageCount,
+  pageIndex,
+  setPageIndex
+}) {
   let pagination = [];
 
   let pageCountSet = [];
@@ -22,6 +24,7 @@ export function PaginationComponent({pageCount, pageIndex, setPageIndex}) {
             finalIndexes.push(pageCount);
             finalIndexes.splice(finalIndexes.length - 1, 0, "...");
           }
+          break;
         case 1:
           //if on first page, show from 1-4 and then last page number
           if (pageIndex === 1) {
